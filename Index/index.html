@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#100817">
+  <meta name="description" content="A little Diwali surprise, made with love.">
+  <title>A Little Diwali Surprise ❤️</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&family=Great+Vibes&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="ambient" aria-hidden="true"></div>
+  <canvas id="sparkles" aria-hidden="true"></canvas>
+  <div class="floating-hearts" id="hearts" aria-hidden="true"></div>
+
+  <main>
+    <section class="intro-screen" id="intro">
+      <div class="intro-glow"></div>
+      <div class="envelope-wrap">
+        <div class="tiny-diya">🪔</div>
+        <div class="envelope" aria-hidden="true">
+          <div class="envelope-back"></div>
+          <div class="letter"><span>For you</span><b>♡</b></div>
+          <div class="envelope-front"></div>
+          <div class="envelope-flap"></div>
+          <div class="seal">♡</div>
+        </div>
+        <p class="eyebrow">A little something, made just for you</p>
+        <h1>I've got a <em>Diwali</em><br>surprise for you</h1>
+        <p class="intro-copy">Some lights are beautiful. Some people make life brighter.</p>
+        <button class="primary-btn" id="openSurprise">Open your surprise <span>♡</span></button>
+        <p class="tap-note">Best opened with sound on ✨</p>
+      </div>
+    </section>
+
+    <div class="site-content" id="siteContent" aria-hidden="true">
+      <header class="topbar">
+        <a class="brand" href="#home"><span>♡</span> just for you</a>
+        <nav>
+          <a href="#home">Home</a><a href="#moments">Our moments</a><a href="#letter">A little note</a>
+        </nav>
+        <button class="music-btn" id="musicToggle" aria-pressed="false">♫ <span>Play music</span></button>
+      </header>
+
+      <section class="hero section" id="home">
+        <div class="hero-decor decor-left">✦</div><div class="hero-decor decor-right">✧</div>
+        <div class="hero-copy">
+          <p class="eyebrow">To someone who makes my world brighter</p>
+          <h2>Happy <span>Diwali</span></h2>
+          <p class="hero-subtitle">To my favourite person <span class="pink">♥</span></p>
+          <p class="hero-message">May your days glow with happiness, your heart feel light, and your smile never lose its magic.</p>
+          <a class="primary-btn" href="#moments">A few favourite moments <span>↓</span></a>
+          <div class="signature">with love, always <span>♡</span></div>
+        </div>
+        <div class="hero-photo-frame">
+          <div class="photo-tape"></div>
+          <img src="assets/photo-3.jpg" alt="A favourite smiling photo">
+          <span class="photo-caption">your beautiful smile ✨</span>
+        </div>
+        <div class="diya-row" aria-hidden="true"><span>🪔</span><span>🪔</span><span>🪔</span></div>
+      </section>
+
+      <section class="section moments" id="moments">
+        <div class="section-heading">
+          <p class="eyebrow">Little memories, big smiles</p>
+          <h2>Our little <em>gallery</em></h2>
+          <p>Some moments deserve a place of their own.</p>
+        </div>
+        <div class="gallery">
+          <figure class="polaroid tilt-left"><img src="assets/photo-1.jpg" alt="A peaceful flower portrait"><figcaption>A little bit of sunshine 🌸</figcaption></figure>
+          <figure class="polaroid tilt-right featured"><img src="assets/photo-2.jpg" alt="The two of us standing together"><figcaption>One of my favourite memories ♡</figcaption></figure>
+          <figure class="polaroid tilt-left lower"><img src="assets/photo-4.jpg" alt="The two of us sitting together"><figcaption>Just us, and a lovely day</figcaption></figure>
+        </div>
+      </section>
+
+      <section class="section note-section" id="letter">
+        <div class="note-card">
+          <div class="note-flower">✿</div>
+          <p class="eyebrow">A note from my heart</p>
+          <h2>For <em>you</em>, always.</h2>
+          <p>Among all the beautiful lights of Diwali, you will always be one of my favourite reasons to smile.</p>
+          <p>I may not always find the perfect words, but I hope this little surprise reminds you how special you are to me. I wish you a life full of happiness, peaceful days, exciting dreams, and countless reasons to smile.</p>
+          <p>And if I could make one wish this Diwali, it would be to see that beautiful smile of yours again and again.</p>
+          <p class="note-sign">Happy Diwali, my favourite person. <span>♥</span></p>
+          <div class="signed">— with love</div>
+        </div>
+      </section>
+
+      <section class="finale section">
+        <div class="finale-diya">🪔</div>
+        <p class="eyebrow">One last thing...</p>
+        <h2>Keep shining,<br><em>beautiful soul.</em></h2>
+        <button class="surprise-btn" id="heartButton">Send a little love <span>♥</span></button>
+        <p class="final-message" id="finalMessage">Made with a little code, a lot of care, and a smile just for you. ❤️</p>
+      </section>
+
+      <footer>Wishing you light, laughter & love — this Diwali and always <span>♡</span></footer>
+    </div>
+  </main>
+  <div class="toast" id="toast" role="status">A little love, sent your way! ♥</div>
+  <script src="script.js"></script>
+</body>
+</html>
